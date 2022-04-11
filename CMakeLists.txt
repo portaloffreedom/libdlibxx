@@ -6,7 +6,7 @@ project(libdlibxx)
 set(CMAKE_CXX_STANDARD 11)
 
 set(VERSION_MAJOR 1)
-set(VERSION_MINOR 0)
+set(VERSION_MINOR 1)
 set(VERSION_PATCH 0)
 
 option(DLIBXX_ENABLE_TESTS OFF "Enable testing")
@@ -38,7 +38,7 @@ set_target_properties(
 ### Install Rules
 install(TARGETS dlibxx LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}")
 install(FILES "${PROJECT_SOURCE_DIR}/include/dlibxx.hxx" DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}")
-install(FILES "${PROJECT_SOURCE_DIR}/LICENSE" DESTINATION "${DATADIR}/licenses/${PROJECT_NAME}")
+install(FILES "${PROJECT_SOURCE_DIR}/LICENSE" DESTINATION "${SHARE_INSTALL_PREFIX}/licenses/${PROJECT_NAME}")
 
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
